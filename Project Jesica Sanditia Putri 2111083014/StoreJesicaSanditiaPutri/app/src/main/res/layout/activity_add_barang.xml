@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBarangActivity">
+
+    <TextView
+        android:id="@+id/txtEntriDataBarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entri Data Barang"
+        android:textSize="25dp"
+        android:textColor="@color/purple"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/namaBarang"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/txtEntriDataBarang"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/border_layout"
+        android:drawableRight="@android:drawable/btn_star_big_on"
+        android:hint=" Nama Barang"
+        android:paddingLeft="10dp"
+        android:textColor="@color/red"
+        android:textColorHint="@color/red"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/deskBarang"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@+id/namaBarang"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/border_layout"
+        android:drawableRight="@android:drawable/btn_star_big_on"
+        android:hint=" Deskripsi"
+        android:inputType="text"
+        android:maxLines="3"
+        android:paddingLeft="10dp"
+        android:textColor="@color/red"
+        android:textColorHint="@color/red"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/hargaBarang"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/deskBarang"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/border_layout"
+        android:drawableRight="@android:drawable/btn_star_big_on"
+        android:hint=" Harga Barang"
+        android:paddingLeft="10dp"
+        android:textColor="@color/red"
+        android:textColorHint="@color/red"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/hpromoBarang"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/hargaBarang"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/border_layout"
+        android:drawableRight="@android:drawable/btn_star_big_on"
+        android:hint=" Harga Promo"
+        android:textColor="@color/red"
+        android:textColorHint="@color/red"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/lgambarBarang"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/hpromoBarang"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/border_layout"
+        android:drawableRight="@android:drawable/btn_star_big_on"
+        android:hint=" Link Gambar Barang"
+        android:inputType="text"
+        android:maxLines="2"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/red"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/red"/>
+
+    <Button
+        android:id="@+id/btnSimpanData"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/lgambarBarang"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/purple"
+        android:drawableRight="@android:drawable/btn_star_big_on"
+        android:text="SIMPAN DATA" />
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/softcake"
+        android:scaleType="center"/>
+
+    <TextView android:id="@+id/title"
+        android:layout_below="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar Menu Makanan"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        />
+
+    <ListView android:id="@+id/listFood"
+        android:layout_width="wrap_content"
+        android:layout_height="530dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/title"
+        android:layout_marginEnd="20dp"
+        tools:listitem="@layout/food_item"/>
+
+</RelativeLayout>
+
+</ScrollView>
