@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DuaActivity">
+
+<TextView
+    android:id="@+id/TransaksiToko"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:text="Transaksi Toko"
+    android:textSize="30sp"
+    android:layout_centerHorizontal="true"
+    android:textColor="@color/red"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="5dp"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNamaBarang"
+        android:layout_below="@id/TransaksiToko"
+        android:text="Nama Barang"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp"
+        android:textColor="@color/green"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editNamaBarang"
+        android:layout_below="@id/txtNamaBarang"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtHargaBarang"
+        android:layout_below="@id/editNamaBarang"
+        android:text="Harga"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp"
+        android:textColor="@color/green"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editHarga"
+        android:layout_below="@id/txtHargaBarang"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtJumlahBeli"
+        android:layout_below="@id/editHarga"
+        android:text="Jumlah Beli"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp"
+        android:textColor="@color/green"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editJumlahBeli"
+        android:layout_below="@id/txtJumlahBeli"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSatuan"
+        android:layout_below="@id/editJumlahBeli"
+        android:text="Satuan"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp"
+        android:textColor="@color/green"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinSatuan"
+        android:layout_below="@id/txtSatuan"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Proses"
+        android:id="@+id/btnProses"
+        android:layout_below="@id/spinSatuan"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/txtOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        style="bold"
+        android:text="Data Transaksi"
+        android:layout_below="@id/btnProses"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp"
+        />
+
+
+</RelativeLayout>
+    </ScrollView>

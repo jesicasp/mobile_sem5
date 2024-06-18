@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TigaActivity">
+
+    <TextView
+        android:id="@+id/txtResto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restoran TRPLC"
+        android:layout_centerHorizontal="true"
+        android:textSize="22sp"
+        android:textColor="@color/red"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="10dp"
+        />
+
+    <TableLayout
+        android:id="@+id/tbl1"
+        android:layout_below="@id/txtResto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+        <TableRow>
+            <TextView android:id="@+id/txtMeja"
+                android:text="No Meja"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editMeja"
+                android:hint="No Meja"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textSize="17sp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/txtMakanan"
+                android:text="Makanan"
+                android:textColor="@color/red"
+                android:layout_marginStart="20sp"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                />
+            <Spinner
+                android:id="@+id/spinMakanan"
+                android:layout_marginStart="20dp"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/txtMinuman"
+                android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Minuman"
+            android:textColor="@color/red"
+            android:layout_marginStart="20sp"
+            android:textStyle="bold"
+            android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                />
+            <Spinner
+                android:id="@+id/spinMinuman"
+                android:layout_below="@id/txtMinuman"
+                android:layout_marginStart="20dp"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/txtHargaMakanan"
+                android:text="Harga Makanan"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editHargaMakanan"
+                android:hint="Harga Makanan"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textSize="17sp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:id="@+id/txtHargaMinuman"
+                android:text="Harga Minuman"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editHargaMinuman"
+                android:hint="Harga Minuman"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textSize="17sp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:id="@+id/txtTambahan"
+                android:text="Tambahan Lainnya"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTambahan"
+                android:hint="Tambahan Lainnya"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textSize="17sp"/>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/txtBayar"
+        android:text="Cara Bayar"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_below="@id/tbl1"/>
+
+    <RadioGroup
+        android:id="@+id/rgBayar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_below="@id/txtBayar"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rbCash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cash"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="@color/green"
+            android:layout_marginStart="20dp"
+            />
+
+        <RadioButton
+            android:id="@+id/rbDebit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Debit"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="@color/green"
+            />
+
+        <RadioButton
+            android:id="@+id/rbQr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QR Code"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="@color/green"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTambah"
+        android:text="Tambahan"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/rgBayar"
+        android:textSize="17sp"/>
+
+    <TableLayout
+        android:id="@+id/tbl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTambah"
+        android:layout_marginStart="65dp">
+
+        <TableRow>
+            <CheckBox android:id="@+id/chkJM"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:text="Jus Mangga"/>
+            <CheckBox android:id="@+id/chkJA"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:text="Jus Alpukat"/>
+            <CheckBox android:id="@+id/chkM"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:text="Matcha"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTglBayar"
+        android:text="Tgl Bayar"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/tbl2"
+        android:textSize="17sp"/>
+
+        <DatePicker
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:id="@+id/dateBayar"
+            android:datePickerMode="calendar"
+            android:layout_below="@id/txtTglBayar"
+            android:layout_marginStart="100dp"/>
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Proses"
+        android:id="@+id/btnProsesResto"
+        android:layout_below="@id/dateBayar"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/red"/>
+
+    <TextView
+        android:id="@+id/txtHasilResto"
+        android:text="Pesanan Restaurant"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_below="@id/btnProsesResto"
+        android:layout_marginTop="20dp"
+        />
+
+</RelativeLayout>
+</ScrollView>

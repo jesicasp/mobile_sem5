@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView android:id="@+id/roomImage"
+        android:layout_height="150dp"
+        android:layout_width="170dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/room1"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/roomKelas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kelas :"
+        android:textColor="@color/darkgreen"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:id="@+id/roomFasilitas"
+        android:layout_below="@+id/roomKelas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fasilitas :"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:id="@+id/roomBed"
+        android:layout_below="@+id/roomFasilitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Bed :"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:id="@+id/roomSarapan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sarapan :"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/roomBed"
+        android:layout_marginEnd="40dp"
+        android:textColor="@color/black"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/roomTambahan"
+        android:text="Tambahan"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/roomSarapan"
+        android:textSize="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="150dp"
+        />
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/roomHarga"
+    android:layout_below="@id/roomImage"
+    android:text="Rp 100000/net"
+    android:layout_marginStart="240dp"
+    android:textStyle="bold"
+    android:textSize="13dp"
+    android:textColor="@color/green"
+    android:layout_marginEnd="40dp"
+    />
+
+</RelativeLayout>

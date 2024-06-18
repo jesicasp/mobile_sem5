@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmpatActivity">
+
+
+    <TextView
+        android:id="@+id/txtJudulPLN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Pelanggan PLN"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/editNoPelanggan"
+        android:layout_below="@+id/txtJudulPLN"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="No Pelanggan"
+        android:textColorHint="@color/red"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_border"
+        android:drawableLeft="@android:drawable/btn_star_big_on"/>
+
+    <EditText
+        android:id="@+id/editPemakaian"
+        android:layout_below="@+id/editNoPelanggan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Pemakaian Kwh"
+        android:textColorHint="@color/red"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_border"
+        android:drawableLeft="@android:drawable/btn_star_big_on"/>
+
+    <EditText
+        android:id="@+id/editHarga"
+        android:layout_below="@+id/editPemakaian"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Harga / Kwh"
+        android:textColorHint="@color/red"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_border"
+        android:drawableLeft="@android:drawable/btn_star_big_on"/>
+
+    <Spinner
+        android:id="@+id/spinJenisLayanan"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/editHarga"
+        android:background="@drawable/edit_text_border"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:text="Send Data"
+        android:id="@+id/btnSend"
+        android:layout_below="@+id/spinJenisLayanan"
+        android:layout_centerHorizontal="true"
+        android:textSize="17dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/red"
+        android:backgroundTint="@color/light_green"/>
+
+</RelativeLayout>

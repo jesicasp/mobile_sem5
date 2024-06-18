@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LimaActivity">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/txtDetailPLN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Pelanggan PLN"
+        android:layout_centerHorizontal="true"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDetailPLN"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtDataNoPel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data No Pelanggan"
+            android:layout_centerHorizontal="true"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:layout_marginStart="20dp"
+            />
+
+        <TextView
+            android:id="@+id/txtDataPemakaian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Pemakaian"
+            android:layout_centerHorizontal="true"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/txtHargaKwh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harga / Kwh"
+            android:layout_centerHorizontal="true"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/txtJenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Layanan"
+            android:layout_centerHorizontal="true"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/txtTotalBayar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Bayar"
+            android:layout_centerHorizontal="true"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+</RelativeLayout>
